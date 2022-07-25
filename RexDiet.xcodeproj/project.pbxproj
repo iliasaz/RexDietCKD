@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4947FEAE287A426900AEBE60 /* DefaultFoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947FEAD287A426900AEBE60 /* DefaultFoods.swift */; };
+		4947FEB0287A59DF00AEBE60 /* FoodEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947FEAF287A59DF00AEBE60 /* FoodEditView.swift */; };
+		497D59D3280245AF0042D8C8 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497D59D2280245AF0042D8C8 /* ModelView.swift */; };
 		49B448DC27F7BDF4009CFF3A /* RexDietApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B448DB27F7BDF4009CFF3A /* RexDietApp.swift */; };
 		49B448DE27F7BDF4009CFF3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B448DD27F7BDF4009CFF3A /* ContentView.swift */; };
 		49B448E027F7BDF6009CFF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49B448DF27F7BDF6009CFF3A /* Assets.xcassets */; };
@@ -14,11 +17,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4947FEAD287A426900AEBE60 /* DefaultFoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFoods.swift; sourceTree = "<group>"; };
+		4947FEAF287A59DF00AEBE60 /* FoodEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEditView.swift; sourceTree = "<group>"; };
+		497D59D2280245AF0042D8C8 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		49B448D827F7BDF4009CFF3A /* RexDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RexDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B448DB27F7BDF4009CFF3A /* RexDietApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RexDietApp.swift; sourceTree = "<group>"; };
 		49B448DD27F7BDF4009CFF3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49B448DF27F7BDF6009CFF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49B448E227F7BDF6009CFF3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49BEAC0627FA4E8400BCE58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		49B448DA27F7BDF4009CFF3A /* RexDiet */ = {
 			isa = PBXGroup;
 			children = (
+				49BEAC0627FA4E8400BCE58A /* Info.plist */,
 				49B448DB27F7BDF4009CFF3A /* RexDietApp.swift */,
 				49B448DD27F7BDF4009CFF3A /* ContentView.swift */,
+				4947FEAF287A59DF00AEBE60 /* FoodEditView.swift */,
+				497D59D2280245AF0042D8C8 /* ModelView.swift */,
+				4947FEAD287A426900AEBE60 /* DefaultFoods.swift */,
 				49B448DF27F7BDF6009CFF3A /* Assets.xcassets */,
 				49B448E127F7BDF6009CFF3A /* Preview Content */,
 			);
@@ -137,6 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497D59D3280245AF0042D8C8 /* ModelView.swift in Sources */,
+				4947FEAE287A426900AEBE60 /* DefaultFoods.swift in Sources */,
+				4947FEB0287A59DF00AEBE60 /* FoodEditView.swift in Sources */,
 				49B448DE27F7BDF4009CFF3A /* ContentView.swift in Sources */,
 				49B448DC27F7BDF4009CFF3A /* RexDietApp.swift in Sources */,
 			);
@@ -195,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,12 +278,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RexDiet/Preview Content\"";
 				DEVELOPMENT_TEAM = 6CGNH3LTV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RexDiet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -279,7 +295,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ilia-Sazonov.RexDiet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -293,12 +309,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RexDiet/Preview Content\"";
 				DEVELOPMENT_TEAM = 6CGNH3LTV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RexDiet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,7 +326,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ilia-Sazonov.RexDiet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

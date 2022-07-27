@@ -80,6 +80,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
+//            EmptyView()
             ScrollViewReader { proxy in
                 VStack(alignment: .leading) {
                     Slider(value: $weightLB, in: 10.0...200.0, onEditingChanged: {
@@ -142,6 +143,7 @@ struct ContentView: View {
                     }
             } // scrollviewreader
         }
+        .navigationViewStyle(.stack)
     }
     
     var reportView: some View {
